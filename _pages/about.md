@@ -23,3 +23,4 @@ He is a software architect who helps companies and organizations.
 - Integration Architecture
 - SOA & Microservices Architecture
 
+<p>{{ page.date | date: "%B %e, %Y" }}</p>
