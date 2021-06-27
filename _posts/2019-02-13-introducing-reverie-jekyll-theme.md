@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introducing Reverie
+title: Lorem ipsum dolor sit amet
 categories: [Miscellaneous, Jekyll]
 ---
 
