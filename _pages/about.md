@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-He is experienced in architecting and developing. He enables companies to become delivering robust, maintainable, reliable, and scaling solutions by building Next Generation Technology Architectures.
+He is experienced in architecting and developing. He enables companies to use robust, maintainable, reliable, and scaling solutions by building Next Generation Technology Architectures.
 
 He holds a Master’s degree in Engineering Management from Sakarya University. He has the following certificates.
 
