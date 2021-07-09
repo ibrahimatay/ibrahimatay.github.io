@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /
+permalink: /about
 ---
 
 He is experienced in architecting and developing. He enables companies to use robust, maintainable, reliable, and scaling solutions by building Next Generation Technology Architectures.
