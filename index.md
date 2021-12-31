@@ -11,7 +11,7 @@ He is experienced in architecting and developing. He enables companies to use ro
 - Integration Architecture
 - SOA & Microservices Architecture
 
-He holds a Bachelor's degree in Computer Engineering and a Master's degree in Engineering Management. He has the following certificates.
+He holds a bachelor's degree in computer engineering and a master's degree in engineering management and has the following certificates.
 
 - The Open Group Architecture Framework (TOGAF) Certified
 - ITIL Foundation
