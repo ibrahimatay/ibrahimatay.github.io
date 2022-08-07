@@ -3,7 +3,7 @@
 layout: page
 title: 
 ---
-He is experienced in architecting and engineering management. He enables companies to use robust, maintainable, reliable, and scalable solutions by building Next Generation Technology Architectures and provides professional services in the following areas.
+He is experienced in architecting and developing. He enables companies to use robust, maintainable, reliable, and scalable solutions by building Next Generation Technology Architectures and provides professional services in the following areas.
 
 - Application Development
 - Enterprise Architectures
