@@ -18,5 +18,3 @@ He holds a bachelor's degree in computer engineering and a master's degree in en
 - PMI Agile Certified Practitioner (PMI-ACP)
 - Certified Scrum Master (CSM)
 - Kanban Management Professional (KMP)
-- Certified Kubernetes Application Developer (CKAD)
-- Oracle Certified Professional: Java SE 11 Developer
