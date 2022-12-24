@@ -7,7 +7,7 @@ As an experienced architect and developer, he has a proven track record of helpi
 
 He is a specialist in application development, enterprise architecture, cloud-native technologies, integration architecture, service-oriented architecture (SOA), and microservices architecture.
 
-He holds a Master's degree in Engineering Management from Sakarya University.In addition, he has obtained the following professional certifications. 
+He holds a Master's degree in Engineering Management from Sakarya University. In addition, he has obtained the following professional certifications. 
 
 - The Open Group Architecture Framework (TOGAF) Certified
 - ITIL Foundation
