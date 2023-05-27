@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/theme/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    <link rel="canonical" href="{{ page.url }}" />
 
     <meta name="theme-color" content="#000000">
 
@@ -24,7 +24,7 @@
       <div class="wrapper-masthead">
         <div class="container">
           <header class="masthead clearfix">
-            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}{{ site.avatar }}" alt="{{ site.title }}" /></a>
+            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="{{ site.title }}" /></a>
 
             <div class="site-info">
               <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
@@ -33,7 +33,7 @@
 
             <nav>
               <a href="{{ site.baseurl }}/">Home</a>
-              <a href="https://ibrahimatay.medium.com/" target="_blank">Writing</a>
+              <a href="{{ site.baseurl }}/blog">Blog</a>
               <a href="{{ site.baseurl }}/contact">Contact</a>
             </nav>
           </header>
