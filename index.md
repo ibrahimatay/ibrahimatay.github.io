@@ -3,7 +3,7 @@
 layout: page
 title: 
 ---
-As an experienced architect and leader, he has a proven track record of helping companies implement next-generation technology architectures that are both robust and scalable. By building solutions that are designed for maintainability, reliability, and scalability, he enables organizations to achieve their business goals and stay competitive in today's rapidly changing technological landscape.
+As an experienced architect and leader, he has a proven track record of helping companies implement next-generation technology architectures that are both robust and scalable. By building solutions that are designed for maintainability, reliability, and cost-effectiveness, he enables organizations to achieve their business goals and stay competitive in today's rapidly changing technological landscape.
 
 He is a specialist in domain-driven design, cloud-native technologies, integration, and microservices architecture.
 
