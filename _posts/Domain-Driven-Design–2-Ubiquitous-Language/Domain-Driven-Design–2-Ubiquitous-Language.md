@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Domain Driven Design (DDD) – 2: Ubiquitous Language
+title: "Domain Driven Design (DDD) – 2: Ubiquitous Language"
 categories: [Domain Driven Design]
 paginate: true
+date: 2024-01-26
 ---
 
 # Introduction
@@ -36,3 +37,20 @@ The following steps can be followed to create Ubiquitous Language:
 4.	Create a common language: Work with domain experts and software developers to create a common language.
 5.	Continuously improve the language: Continuously improve the language as knowledge about the domain and software is gained.
 
+# Examples
+Let's assume that Ubiquitous Language is being created for an e-commerce project. In this project, terms and concepts such as "product", "order", and "customer" can be used. The meanings and usage of these terms can be documented as follows:
+- Customer: A person who shops on the e-commerce website.
+- Product: A good or service sold on the e-commerce website.
+- Order: A list of products that a customer wants to purchase.
+- Cart: A virtual space used to temporarily store the products that a customer wants to purchase.
+- Payment: The amount that a customer pays for an order.
+
+These terms and concepts will be understood in the same way by all stakeholders in the project. When developers use these terms in the code, they will be using the language of the domain experts. This will ensure that the software better meets the real needs of the business domain.
+
+# Conclusion
+Ubiquitous Language is one of the most important principles of DDD. Effective application of this principle ensures that the software is more understandable, flexible, and open to evolution.
+
+Further Information
+- Domain Driven Design: Tackling Complexity in the Heart of Software by Eric Evans 
+- [https://martinfowler.com/bliki/UbiquitousLanguage.html](https://martinfowler.com/bliki/UbiquitousLanguage.html)
+- [https://thedomaindrivendesign.io/developing-the-ubiquitous-language/](https://thedomaindrivendesign.io/developing-the-ubiquitous-language/)
