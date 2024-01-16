@@ -1,5 +1,6 @@
 ---
 layout: post
+author: İbrahim ATAY
 title: "Domain-Driven Design (DDD) – 1: Core Concepts & History"
 categories: [Domain Driven Design]
 paginate: true
