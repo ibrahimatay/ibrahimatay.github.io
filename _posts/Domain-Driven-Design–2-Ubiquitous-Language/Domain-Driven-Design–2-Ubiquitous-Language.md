@@ -4,6 +4,7 @@ title: "Domain Driven Design (DDD) – 2: Ubiquitous Language"
 categories: [Domain Driven Design]
 paginate: true
 date: 2024-01-26
+url: Domain-Driven-Design–2-Ubiquitous-Language
 ---
 
 # Introduction
