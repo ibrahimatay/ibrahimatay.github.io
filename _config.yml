@@ -105,6 +105,8 @@ exclude:
   - README.md
   - CNAME
 
+future: true
+
 
 # commands
 # - bundle install

@@ -1,7 +1,7 @@
 ---
 layout: post
 author: İbrahim ATAY
-title: "Domain-Driven Design (DDD) – 1: Core Concepts & History"
+title: "Domain-Driven Design – 1: Core Concepts & History"
 categories: [Domain Driven Design]
 paginate: true
 date: 2024-01-26
@@ -12,14 +12,14 @@ Domain-Driven Design (DDD) is a software development approach introduced by Eric
     <center>
      ![image](/assets/media/Domain-Driven-Design–1-Core-Concepts-and-History/Domain-Driven-Design.png)
     </center>
-## Key milestones in the development of DDD:
+# Key milestones in the development of DDD:
 - 2003: Eric Evans published his book "Domain-Driven Design: Tackling Complexity in the Heart of Software", introducing the core principles and concepts of DDD.
 - 2014: Martin Fowler published the article "Bounded Contexts", introducing the concept of bounded contexts, a key concept in DDD.
 - 2004: Vaughn Vernon published the book "Implementing Domain-Driven Design", providing practical guidance on applying DDD.
 
 Since the emergence of DDD principles, the approach has gained rapid popularity in the software development community. Various patterns and techniques have been developed to implement DDD principles, enabling DDD to be applied in different programming languages and platforms.
 
-## Key principles:
+# Key principles:
 - Ubiquitous language: Using a common language for the concepts of the domain
 - Bounded contexts: Using bounded contexts to separate different parts of the domain
 - Entities: Using entities to represent the core concepts of the domain
@@ -28,25 +28,25 @@ Since the emergence of DDD principles, the approach has gained rapid popularity 
 - Repositories: Repositories used to store and access entities
 - Services: Services that perform the functions of the domain
 
-## Tactical Design:
+# Tactical Design:
 - Focuses on designing the internal structure of each bounded context.
 - Defines entities, value objects, aggregates, and their relationships.
 - Implements repositories and services to support domain logic.
 - Applies patterns like Domain Events and CQRS to model complex interactions.
 
-## Context Mapping:
+# Context Mapping:
 - Visualizes the relationships between bounded contexts.
 - Identifies potential integration points and communication patterns.
 - Helps teams understand how different parts of the domain interact.
 - Common patterns include Customer-Supplier, Shared Kernel, and Conformist.
 
-## Benefits:
+# Benefits:
 - Helps to better understand and manage complex systems
 - Helps to develop more flexible and adaptable systems
 - Makes systems closer to the business domain
 - Improves communication and collaboration between developers and business analysts
 
-## Drawbacks:
+# Drawbacks:
 - Can be difficult to learn and apply
 - Requires more time and effort
 - May not be suitable for every project
