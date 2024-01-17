@@ -10,11 +10,9 @@ url: Domain-Driven-Design–2-Ubiquitous-Language
 
 # Introduction
 Ubiquitous Language is a core concept in Domain Driven Design (DDD). Eric Evans, the founder of DDD, defines Ubiquitous Language as "a language that is used by everyone (developers, analysts, domain experts) involved in a project". This language represents the concepts and terminology of the domain and captures the essence of the domain.
-    <center>
-     ![image](/assets/media/Domain-Driven-Design–2-Ubiquitous-Language/Ubiquitous-Language.png)
-    </center>
 
-    ![image](/assets/media/Domain-Driven-Design–2-Ubiquitous-Language/Ubiquitous-Language.png)
+![image](/assets/media/Domain-Driven-Design–2-Ubiquitous-Language/Ubiquitous-Language.png)
+
 # Characteristics
 - Domain-specific: It reflects the concepts and terms of the domain.
 - Used by all team members: It is used as a common language by domain experts, software developers, testers, and other team members.
