@@ -9,9 +9,9 @@ url: Domain-DrivenDesign–1-Core-Concepts-and-History
 ---
 # Introduction
 Domain-Driven Design (DDD) is a software development approach introduced by Eric Evans in his 2003 book "Domain-Driven Design: Tackling Complexity in the Heart of Software." The approach proposes placing the concepts and models of the domain (the area of knowledge and activity that defines the problem and the solution) at the center of software design and development to address complexities in designing and developing complex software systems.
-    <center>
-     ![image](/assets/media/Domain-Driven-Design–1-Core-Concepts-and-History/Domain-Driven-Design.png)
-    </center>
+
+![image](/assets/media/Domain-Driven-Design–1-Core-Concepts-and-History/Domain-Driven-Design.png)
+
 # Key milestones in the development of DDD:
 - 2003: Eric Evans published his book "Domain-Driven Design: Tackling Complexity in the Heart of Software", introducing the core principles and concepts of DDD.
 - 2014: Martin Fowler published the article "Bounded Contexts", introducing the concept of bounded contexts, a key concept in DDD.
