@@ -13,6 +13,8 @@ Ubiquitous Language is a core concept in Domain Driven Design (DDD). Eric Evans,
     <center>
      ![image](/assets/media/Domain-Driven-Design–2-Ubiquitous-Language/Ubiquitous-Language.png)
     </center>
+
+    ![image](/assets/media/Domain-Driven-Design–2-Ubiquitous-Language/Ubiquitous-Language.png)
 # Characteristics
 - Domain-specific: It reflects the concepts and terms of the domain.
 - Used by all team members: It is used as a common language by domain experts, software developers, testers, and other team members.
@@ -21,7 +23,7 @@ Ubiquitous Language is a core concept in Domain Driven Design (DDD). Eric Evans,
 
 # Benefits
 - Better communication: It helps in better communication between domain experts and software developers.
-- Better domain modeling: It enables better understanding of the domain and creation of a more robust domain model.
+- Better domain modeling: It enables a better understanding of the domain and the creation of a more robust domain model.
 - Better software: It contributes to the development of software that better meets the needs of the domain.
 
 # Usage
