@@ -1,11 +1,11 @@
 ---
 layout: post
 author: İbrahim ATAY
-title: "Domain-Driven Design – 1: Core Concepts & History"
+title: "Domain-Driven Design: Core Concepts & History"
 categories: [Domain Driven Design]
 paginate: true
 date: 2024-04-10
-url: Domain-DrivenDesign–1-Core-Concepts-and-History
+url: Domain-DrivenDesign-Core-Concepts-and-History
 ---
 # Introduction
 Domain-Driven Design (DDD) is a software development approach introduced by Eric Evans in his book "Domain-Driven Design: Tackling Complexity in the Heart of Software." The approach proposes placing the concepts and models of the domain (the area of knowledge and activity that defines the problem and the solution) at the center of software design and development to address complexities in designing and developing complex software systems.
