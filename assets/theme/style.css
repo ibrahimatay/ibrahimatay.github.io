@@ -1778,7 +1778,10 @@ code {
 }
 
 .post-list-heading {
-  font-size: 28px;
+  font-size: 25px;
+}
+.post-list-heading h2 {
+  font-weight: normal;
 }
 .post-list {
   margin-left: 0;
