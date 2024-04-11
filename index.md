@@ -15,6 +15,8 @@ He holds a Master's degree in Engineering Management from Sakarya University. In
 - Certified Scrum Master (CSM)
 - Kanban Management Professional (KMP)
 
+<br>
+
 {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Latest Posts" }}</h2>
     <ul class="post-list">
