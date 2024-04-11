@@ -16,7 +16,7 @@ He holds a Master's degree in Engineering Management from Sakarya University. In
 - Kanban Management Professional (KMP)
 
 <br>
-
+<div>
 {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Latest Posts" }}</h2>
     <ul class="post-list">
@@ -39,3 +39,4 @@ He holds a Master's degree in Engineering Management from Sakarya University. In
 
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
+  </div>
