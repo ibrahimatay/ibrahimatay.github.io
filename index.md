@@ -14,3 +14,26 @@ He holds a Master's degree in Engineering Management from Sakarya University. In
 - PMI Agile Certified Practitioner (PMI-ACP)
 - Certified Scrum Master (CSM)
 - Kanban Management Professional (KMP)
+
+{%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Latest Posts" }}</h2>
+    <ul class="post-list">
+      {%- assign post_limit = site.home_post_limit | default: 5 -%}
+      {%- for post in site.posts limit:post_limit -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
