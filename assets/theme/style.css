@@ -3,19 +3,87 @@
 /* MEYER RESET */
 /***************/
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,8 +92,17 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -33,17 +110,21 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none;
 }
 
@@ -52,7 +133,9 @@ table {
   border-spacing: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -68,7 +151,9 @@ html {
 
 body {
   background: #fff;
-  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
   color: #404040;
   line-height: 1.7;
   font-weight: 400;
@@ -83,8 +168,15 @@ body {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
   color: #222;
   font-weight: bold;
   line-height: 1.7;
@@ -92,7 +184,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 @media screen and (max-width: 640px) {
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     line-height: 1.4;
   }
 }
@@ -109,7 +206,8 @@ h2 {
 }
 
 @media (min-width: 769px) {
-  .post h2::before, .post h2::after {
+  .post h2::before,
+  .post h2::after {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -221,15 +319,17 @@ span[data-pullquote]:before {
 }
 
 a {
-  color: #4183C4;
+  color: #4183c4;
   text-decoration: none;
   cursor: pointer;
 }
-a:hover, a:active {
-  color: #4183C4;
+a:hover,
+a:active {
+  color: #4183c4;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 15px 0;
   padding-left: 30px;
 }
@@ -242,19 +342,25 @@ ol {
   list-style-type: decimal;
 }
 
-ol ul, ul ol, ul ul, ol ol {
+ol ul,
+ul ol,
+ul ul,
+ol ol {
   margin: 0;
 }
 
-ul ul, ol ul {
+ul ul,
+ol ul {
   list-style-type: circle;
 }
 
-em, i {
+em,
+i {
   font-style: italic;
 }
 
-strong, b {
+strong,
+b {
   font-weight: bold;
 }
 
@@ -393,7 +499,7 @@ nav a {
 @media screen and (max-width: 640px) {
   nav a {
     margin: 0 10px;
-    color: #4183C4;
+    color: #4183c4;
   }
 }
 
@@ -408,7 +514,7 @@ nav a {
 }
 
 .post blockquote {
-  margin: 1.8em .8em;
+  margin: 1.8em 0.8em;
   /*border-left: 2px solid $gray;*/
   padding: 0.1em 1em;
   color: #666;
@@ -417,7 +523,7 @@ nav a {
   background-color: #ede1ff;
 }
 .post .you-may-like {
-  margin: 1.8em .8em;
+  margin: 1.8em 0.8em;
   /*border-left: 2px solid $gray;*/
   padding: 0.1em 1em;
   color: #666;
@@ -456,13 +562,19 @@ footer {
 }
 
 body:after {
-      background: linear-gradient(to right, #ffffff 0, #2196F3 33%, #E91E63 66%, #000 100%);
+      background: linear-gradient(
+    to right,
+    #ffffff 0,
+    #2196f3 33%,
+    #e91e63 66%,
+    #000 100%
+  );
       width: 100%;
       height: 5px;
       top: 0;
       position: absolute;
       left: 0;
-      content: '';
+      content: "";
 }
 
 #bar {
@@ -478,18 +590,22 @@ body:after {
 }
 
 .post h1 {
-  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
   font-weight: bold;
   font-kerning: auto;
-  font-feature-settings: "kern","liga","dlig","hlig","cswh";
+  font-feature-settings: "kern", "liga", "dlig", "hlig", "cswh";
   line-height: 1.2;
 }
 
 .page h1 {
-  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
   font-weight: bold;
   font-kerning: auto;
-  font-feature-settings: "kern","liga","dlig","hlig","cswh";
+  font-feature-settings: "kern", "liga", "dlig", "hlig", "cswh";
   line-height: 1.2;
 }
 
@@ -511,7 +627,8 @@ body:after {
   max-width: 100%;
 }
 
-.cd-container h1, .cd-container h2 {
+.cd-container h1,
+.cd-container h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
@@ -530,7 +647,7 @@ Modules - reusable parts of our design
 
 .cd-container::after {
   /* clearfix */
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -544,7 +661,7 @@ Modules - reusable parts of our design
 
 #cd-timeline::before {
   /* this is the vertical line */
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 18px;
@@ -603,7 +720,8 @@ Modules - reusable parts of our design
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .cd-timeline-img img {
@@ -665,7 +783,9 @@ Modules - reusable parts of our design
 }
 
 #carbonads {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
   display: inline-block;
   overflow: hidden;
   max-width: 270px;
@@ -721,9 +841,16 @@ Modules - reusable parts of our design
 .carbon-poweredby {
   display: block;
   padding: 10px var(--font-size);
-  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(0, 0, 0, 0.025) 5px, rgba(0, 0, 0, 0.025) 10px) rgba(241, 243, 244, 0.4);
+  background: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 5px,
+      rgba(0, 0, 0, 0.025) 5px,
+      rgba(0, 0, 0, 0.025) 10px
+    )
+    rgba(241, 243, 244, 0.4);
   text-transform: uppercase;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   font-weight: 600;
   font-size: 9px;
   line-height: 0;
@@ -737,12 +864,13 @@ Modules - reusable parts of our design
   font-size: 14.5px;
   padding: 2px 13px;
   border: none;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   border-radius: 50px;
   color: #fff;
 }
 
-.pagination a, .pagination span {
+.pagination a,
+.pagination span {
   padding: 7px 18px;
   border: 1px solid #eee;
   margin-left: -2px;
@@ -811,7 +939,7 @@ Modules - reusable parts of our design
 
 .subscribeBtn {
   width: 30%;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -948,12 +1076,15 @@ Modules - reusable parts of our design
   color: #303e49;
 }
 
-.cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+.cd-timeline-content p,
+.cd-timeline-content .cd-read-more,
+.cd-timeline-content .cd-date {
   font-size: 13px;
   font-size: 0.8125rem;
 }
 
-.cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+.cd-timeline-content .cd-read-more,
+.cd-timeline-content .cd-date {
   display: inline-block;
 }
 
@@ -964,7 +1095,7 @@ Modules - reusable parts of our design
 
 .cd-timeline-content .cd-read-more {
   float: right;
-  padding: .8em 1em;
+  padding: 0.8em 1em;
   background: #acb7c0;
   color: white;
   border-radius: 0.25em;
@@ -976,12 +1107,12 @@ Modules - reusable parts of our design
 
 .cd-timeline-content .cd-date {
   float: left;
-  padding: .8em 0;
-  opacity: .7;
+  padding: 0.8em 0;
+  opacity: 0.7;
 }
 
 .cd-timeline-content::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 16px;
   right: 100%;
@@ -1002,7 +1133,8 @@ Modules - reusable parts of our design
     font-size: 1rem;
   }
 
-  .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+  .cd-timeline-content .cd-read-more,
+  .cd-timeline-content .cd-date {
     font-size: 14px;
     font-size: 0.875rem;
   }
@@ -1069,7 +1201,9 @@ Modules - reusable parts of our design
 }
 @media only screen and (min-width: 1170px) {
   /* inverse bounce effect on even content blocks */
-  .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
+  .cssanimations
+    .cd-timeline-block:nth-child(even)
+    .cd-timeline-content.bounce-in {
     -webkit-animation: cd-bounce-2-inverse 0.6s;
     -moz-animation: cd-bounce-2-inverse 0.6s;
     animation: cd-bounce-2-inverse 0.6s;
@@ -1185,13 +1319,13 @@ Modules - reusable parts of our design
 }
 
 code {
-  font-family: 'Bitstream Vera Sans Mono','Courier', monospace;
+  font-family: "Bitstream Vera Sans Mono", "Courier", monospace;
   color: #d8d8d8;
 }
 
 .highlighter-rouge {
-  background-color: #FAFAFA;
-  color: #FF554A;
+  background-color: #fafafa;
+  color: #ff554a;
   font-size: 16px;
 }
 
@@ -1643,49 +1777,49 @@ code {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTIyLjg4IDEyMi44ODEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEyMi44OCAxMjIuODgxIiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iI0U3RTNDNyIgZD0iTTE2LjM3OSwwaDkwLjEyMmM5LjAwOSwwLDE2LjM3OSw3LjM3MSwxNi4zNzksMTYuMzc5djkwLjEyMiBjMCw5LjAwOS03LjM3LDE2LjM4LTE2LjM3OSwxNi4zOEgxNi4zNzlDNy4zNzEsMTIyLjg4MSwwLDExNS41MSwwLDEwNi41MDFWMTYuMzc5QzAsNy4zNzEsNy4zNzEsMCwxNi4zNzksMEwxNi4zNzksMHoiLz48cGF0aCBmaWxsPSIjNkMzRDBEIiBkPSJNNjEuNjYxLDI1Ljc5NWMtNi4yOSwwLTExLjEwOCwyLjUxNC0xNC40MjcsNi41NDljLTMuNzk2LDQuNjE1LTUuNzE2LDExLjIzNy01LjcxNiwxOC40NDcgYzAsNy4yMjEsMS44NTksMTMuNTczLDUuNDIsMTcuOTcyYzMuMjAzLDMuOTU2LDcuODUxLDYuMzQ5LDEzLjgyNCw2LjM0OWM2LjMzMiwwLDExLjI3LTIuNDU3LDE0LjY4NS02LjQ0NCBjMy44MTEtNC40NDgsNS44MDMtMTAuODE5LDUuODAzLTE3Ljg3NmMwLTAuMDY0LDAuMDAzLTAuMTI5LDAuMDA5LTAuMTkybDAuMDAxLTAuMDkzaC0wLjAwOWMwLTYuNDA0LTEuNzI5LTEyLjY0NC01LjA5MS0xNy4yNjIgYy0zLjI0OC00LjQ2Mi04LjA2MS03LjQxMS0xNC4zNC03LjQ1NmwtMC4xNTktMC4wMDFWMjUuNzk1TDYxLjY2MSwyNS43OTV6IE04MS4zNTUsNzEuNzEyYy0xLjMyNywxLjc0Ni0yLjg5NiwzLjI3OS00LjYzNCw0LjU4NSBjLTQuNTYxLDMuNDI3LTEwLjI4NSw1LjI3OC0xNS44MzMsNS4yNzhjLTguMTg4LDAtMTQuNDQ0LTMuMjc2LTE4Ljc3Mi04LjUyMWMtNC43LTUuNjk1LTcuMDQzLTEzLjY5NS03LjA0My0yMi4yNjMgYzAtOC44NjcsMi40NjMtMTYuOTczLDcuMjYyLTIyLjczOWM0LjQ5NS01LjQwMSwxMC45NzItOC43MjksMTkuMzI2LTguNzI5YzUuODIxLDAsMTEuMDM3LDEuOTk2LDE1LjEzNSw1LjI5NCBjMS43MzYsMS4zOTgsMy4yNywzLjAyOSw0LjU2LDQuODQxdi04LjI3NWg2LjQ1MXY1OC41NjRjMCw4LjU2MS0yLjMzNSwxNC45NjgtNi42MzUsMTkuMzI2IGMtNC40OTksNC41NjMtMTEuMDMyLDYuNzc2LTE5LjE4Nyw2Ljc3NmMtNi42MjMsMC0xMi43ODgtMS43MjItMTcuMjE1LTUuNThjLTMuOTI4LTMuNDIyLTYuNDI3LTguNDUxLTYuNTk3LTE1LjM0OHYtMC4wMzloNi40NTEgbC0wLjAwMSwwLjA3M2MwLjIxNSw0Ljg1MywxLjkzLDguMjk3LDQuNTg5LDEwLjU3M2MzLjEzMywyLjY4Miw3LjY2MSwzLjg1MSwxMi42NjQsMy44NTFjNi40MSwwLDExLjM2OS0xLjU3NywxNC42MzEtNC44NTQgYzMuMTYzLTMuMTc4LDQuODQ5LTguMDYzLDQuODQ5LTE0Ljc3OFY3MS43MTJMODEuMzU1LDcxLjcxMnoiLz48L2c+PC9zdmc+);
 }
 
-.post-list-heading{
-  font-size:28px
+.post-list-heading {
+  font-size: 28px;
 }
-.post-list{
-  margin-left:0;
-  list-style:none
+.post-list {
+  margin-left: 0;
+  list-style: none;
 }
-.post-list>li{
-  margin-bottom:30px
+.post-list > li {
+  margin-bottom: 30px;
 }
 
-.post-link>ul{
-  padding-left:0px
+.post-link > ul {
+  padding-left: 0px;
 }
-.post-meta{
-  font-size:14px;
-  color:#828282
+.post-meta {
+  font-size: 14px;
+  color: #828282;
 }
-.post-link{
-  display:block;
-  font-size:24px
+.post-link {
+  display: block;
+  font-size: 24px;
 }
-.post-header{
-  margin-bottom:30px
+.post-header {
+  margin-bottom: 30px;
 }
-.post-title{
-  font-size:42px;
-  letter-spacing:-1px;
-  line-height:1
+.post-title {
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1;
 }
-@media screen and (max-width: 800px){
-  .post-title{
-      font-size:36px
+@media screen and (max-width: 800px) {
+  .post-title {
+    font-size: 36px;
   }
 }
-.post-content{
-  margin-bottom:30px
+.post-content {
+  margin-bottom: 30px;
 }
-.post-content h2{
-  font-size:32px
+.post-content h2 {
+  font-size: 32px;
 }
-@media screen and (max-width: 800px){
-  .post-content h2{
-      font-size:28px
+@media screen and (max-width: 800px) {
+  .post-content h2 {
+    font-size: 28px;
   }
 }
