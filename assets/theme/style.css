@@ -1653,6 +1653,10 @@ code {
 .post-list>li{
   margin-bottom:30px
 }
+
+.post-link>ul{
+  padding-left:0px
+}
 .post-meta{
   font-size:14px;
   color:#828282
