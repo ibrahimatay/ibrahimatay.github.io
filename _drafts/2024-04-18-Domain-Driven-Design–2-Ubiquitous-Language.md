@@ -1,10 +1,10 @@
 ---
 layout: post
 author: İbrahim ATAY
-title: "Domain Driven Design – 2: Ubiquitous Language"
+title: "Domain Driven Design: Ubiquitous Language"
 categories: [Domain Driven Design]
 paginate: true
-date: 2024-01-26
+date: 2024-04-18
 url: Domain-Driven-Design–2-Ubiquitous-Language
 ---
 
