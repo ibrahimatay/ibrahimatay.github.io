@@ -19,23 +19,21 @@ Two fundamental concepts of DDD are Bounded Contexts and Context Mapping. These 
 
 # Bounded Contexts
 
-A Bounded Context is a clear boundary that encapsulates a specific domain model, defining its scope, language, and rules.
+A Bounded Context is a clear boundary that encapsulates a specific domain model, defining its scope, language, and rules. Acts as an autonomous unit within a larger system, ensuring consistency and reducing coupling.
 
-- Acts as an autonomous unit within a larger system, ensuring consistency and reducing coupling.
-- *Goals*:
-    - ***Encapsulation***: Protects domain logic and data from external complexities, preventing unwanted coupling and side effects.
-    - ***Consistency***: Provides a consistent model and a unified language within its boundaries, reducing misunderstandings and aligning with business goals.
-    - ***Autonomy***: Allows each context to be developed and evolved independently, fostering agility and adaptability to changing requirements.
+*Goals*:
+- ***Encapsulation***: Protects domain logic and data from external complexities, preventing unwanted coupling and side effects.
+- ***Consistency***: Provides a consistent model and a unified language within its boundaries, reducing misunderstandings and aligning with business goals.
+- ***Autonomy***: Allows each context to be developed and evolved independently, fostering agility and adaptability to changing requirements.
 
 # Context Mapping
 
-A technique that visually represents the relationships and interactions between Bounded Contexts in a system.
+A technique that visually represents the relationships and interactions between Bounded Contexts in a system. Promotes alignment and avoids integration issues by clarifying how different contexts communicate and collaborate.
 
-- Promotes alignment and avoids integration issues by clarifying how different contexts communicate and collaborate.
-- *Goals*:
-    - ***Visualization***: Provides a clear overview of the system's domain structure, facilitating understanding and communication among stakeholders.
-    - ***Relationship Management***: Identifies potential integration challenges and suggests appropriate patterns to address them, enabling effective collaboration between contexts.
-    - ***Collaboration Support***: Helps teams working on different contexts understand their dependencies and coordinate efforts, reducing inconsistencies and friction.
+*Goals*:
+- ***Visualization***: Provides a clear overview of the system's domain structure, facilitating understanding and communication among stakeholders.
+- ***Relationship Management***: Identifies potential integration challenges and suggests appropriate patterns to address them, enabling effective collaboration between contexts.
+- ***Collaboration Support***: Helps teams working on different contexts understand their dependencies and coordinate efforts, reducing inconsistencies and friction.
 
 
 Primary Context Mapping Patterns
