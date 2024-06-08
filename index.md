@@ -1,7 +1,7 @@
 ---
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
-title: 
+title:  
 ---
 As an experienced architect and leader, he has a proven track record of helping companies implement next-generation technology architectures that are both robust and scalable. By building solutions that are designed for maintainability, reliability, and cost-effectiveness, he enables organizations to achieve their business goals and stay competitive in today's rapidly changing technological landscape.
 
