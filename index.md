@@ -9,10 +9,13 @@ His leadership skills have been instrumental in guiding teams through complex pr
 
 He is a specialist in domain-driven design, cloud-native technologies, integration, and microservices architecture.
 
-# He holds a Master's degree in Engineering Management from Sakarya University. In addition, he has obtained the following professional certifications. 
+<!---
+ He holds a Master's degree in Engineering Management from Sakarya University. In addition, he has obtained the following professional certifications. 
 
-# - The Open Group Architecture Framework (TOGAF) Certified
-# - ITIL Foundation
-# - PMI Agile Certified Practitioner (PMI-ACP)
-# - Certified Scrum Master (CSM)
-# - Kanban Management Professional (KMP)
+- The Open Group Architecture Framework (TOGAF) Certified
+- ITIL Foundation
+- PMI Agile Certified Practitioner (PMI-ACP)
+- Certified Scrum Master (CSM)
+- Kanban Management Professional (KMP)
+
+-->
