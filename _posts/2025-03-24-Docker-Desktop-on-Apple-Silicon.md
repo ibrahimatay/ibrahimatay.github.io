@@ -15,13 +15,44 @@ This shift in architecture brings significant performance benefits. I observed f
 
 ## Comparison: Old vs. New Virtualization Architecture
 The table below highlights the key differences between traditional Docker setups on Intel Macs and the new architecture on Apple Silicon:
-| Feature                 | Intel (x86) + VirtualBox/HyperKit | Apple Silicon + Hypervisor.framework |  
-|-------------------------|-----------------------------------|--------------------------------------|
-| Virtualization Layer    | VirtualBox / HyperKit             | Native Hypervisor.framework          |   
-| Hardware Acceleration   | Limited (external dependencies)   | Yes (built-in)                       |   
-| Docker Performance      | Moderate / Variable               | High / Stable                        |   
-| Resource Usage          | Higher system overhead            | Optimized and lightweight            |   
-| Installation Complexity | Higher (extra software needed)    | Lower (native support)               |   
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Intel (x86) + VirtualBox/HyperKit</th>
+      <th>Apple Silicon + Hypervisor.framework</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Virtualization Layer</td>
+      <td>VirtualBox / HyperKit</td>
+      <td>Native Hypervisor.framework</td>
+    </tr>
+    <tr>
+      <td>Hardware Acceleration</td>
+      <td>Limited (external dependencies)</td>
+      <td>Yes (built-in)</td>
+    </tr>
+    <tr>
+      <td>Docker Performance</td>
+      <td>Moderate / Variable</td>
+      <td>High / Stable</td>
+    </tr>
+    <tr>
+      <td>Resource Usage</td>
+      <td>Higher system overhead</td>
+      <td>Optimized and lightweight</td>
+    </tr>
+    <tr>
+      <td>Installation Complexity</td>
+      <td>Higher (extra software needed)</td>
+      <td>Lower (native support)</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Final Thoughts
 The transition to Apple Silicon has made Docker Desktop significantly more streamlined and performant. For developers relying on containerized workflows, this shift means easier setup, better speed, and fewer moving parts.
