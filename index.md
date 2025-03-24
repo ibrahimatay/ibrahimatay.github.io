@@ -7,7 +7,7 @@ As an experienced architect and leader, he has a proven track record of helping 
 
 His leadership skills have been instrumental in guiding teams through complex projects, ensuring alignment with strategic objectives, and fostering a culture of innovation and continuous improvement.
 
-He is a specialist in domain-driven design, cloud-native technologies, integration, and microservices architecture.
+He specializes in domain-driven design, microservices, event-driven architectures, cloud-native technologies, and system integration.
 
 <!---
  He holds a Master's degree in Engineering Management from Sakarya University. In addition, he has obtained the following professional certifications. 
