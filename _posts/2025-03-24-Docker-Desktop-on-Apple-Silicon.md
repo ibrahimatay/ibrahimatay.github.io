@@ -60,8 +60,6 @@ The transition to Apple Silicon has made Docker Desktop significantly more strea
 If you're considering switching to Apple Silicon — or already have — you’ll likely appreciate the seamless integration and enhanced performance Docker Desktop now offers out of the box.
 
 ## References
-
-- [Docker Documentation – Docker Desktop on Mac with Apple silicon](https://docs.docker.com/desktop/mac/apple-silicon/)
 - [Apple Developer Documentation – Hypervisor Framework](https://developer.apple.com/documentation/hypervisor)
-- [Docker Blog – Docker Desktop for Apple Silicon is now GA](https://www.docker.com/blog/docker-desktop-for-apple-silicon-is-now-ga/)
+
 
