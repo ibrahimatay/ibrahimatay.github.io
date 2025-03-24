@@ -209,12 +209,12 @@ h2 {
   .post h2::before,
   .post h2::after {
     content: "";
-    display: inline-block;
+    /* display: inline-block; */
     vertical-align: middle;
     width: 46px;
     height: 1px;
     background: #c0d3da;
-    margin: 0px 30px;
+    /* margin: 0 10px; */
   }
 }
 h3 {
