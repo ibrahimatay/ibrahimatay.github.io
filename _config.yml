@@ -29,7 +29,7 @@ footer-links:
   instagram: agilestorytelling
   linkedin: ibrahimatay
   pinterest:
-  rss: rss
+  rss: 
   twitter: ibrahim_atay
   stackoverflow: 
   youtube: # channel/<your_long_string> or user/<user-name>
@@ -37,7 +37,7 @@ footer-links:
   playconsole:
   scrumallice: ibrahimatay
   kanbanuniversity: ibrahimatay
-  goodreads: ibrahimatay
+  goodreads: 
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
