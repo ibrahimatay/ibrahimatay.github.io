@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /_certificate/
+Disallow: /_docs/
+Allow: /
+
+Sitemap: https://www.ibrahimatay.com/sitemap.xml
