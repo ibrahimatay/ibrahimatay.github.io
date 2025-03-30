@@ -87,7 +87,7 @@ kramdown:
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  style: compressed # You might prefer to minify using :compressed
 
 # Use the following plug-ins
 plugins:
@@ -110,6 +110,13 @@ exclude:
   - CNAME
 
 future: true
+
+defaults:
+  - scope:
+      path:            /assets/css/style.css
+    values:
+      sitemap:         false
+
 
 
 # commands
