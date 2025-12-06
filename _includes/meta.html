@@ -11,7 +11,11 @@
 
 {% if page.title %}
 <meta property="og:title" content="{{ page.title }}" />
-<meta property="twitter:title" content="{{ page.title }}" />
+
+{% if site.footer-links.twitter %}
+<meta property="twitter:title" content="{{ site.footer-links.twitter }}" />
+{% endif %}
+
 {% endif %}
 
 {% if page.image %}
