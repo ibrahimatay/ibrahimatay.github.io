@@ -7,4 +7,4 @@ As an experienced architect and leader, I have a proven track record of helping 
 
 My leadership skills have played a crucial role in guiding teams through complex projects, ensuring alignment with strategic objectives, and nurturing a culture of innovation and continuous improvement. I'm passionate about fostering Agile practices, including Scrum methodologies, to enhance team velocity and product delivery.
 
-He specializes in domain-driven design, microservices, event-driven architecture, and cloud-native technology.
+I specialize in domain-driven design, microservices, event-driven architecture, and cloud-native technologies.
