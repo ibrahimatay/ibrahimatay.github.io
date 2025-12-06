@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /notes/
+permalink: /insights/
 title: Thoughts 
 ---
 
