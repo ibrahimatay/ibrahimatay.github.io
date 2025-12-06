@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Database Modernisation Guide
-
+categories: [Application Modernization, Database Performance]
 paginate: true
 summary: A practical guide to modernising legacy databases. Learn how to identify slow queries, fix structural issues, optimise execution plans, manage data types, and boost performance with clean, scalable design principles.
 ---
