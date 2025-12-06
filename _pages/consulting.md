@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /consulting/
-title: Consulting
+permalink: /advisory/
+title: Advisory
 ---
 ## Application Modernization
 
