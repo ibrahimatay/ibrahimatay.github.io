@@ -17,11 +17,11 @@ Below are the essential checkpoints I have refined through real-world experience
 ## Stations – Key Checkpoints in Database Modernisation
 ### 1. Identifying Long-Running Queries
 
-The first step is identifying queries that consistently run for long periods, usually triggered by real application users. This requires analysing database query logs and making use of Dynamic Management Views, particularly those starting with sys.dm_exec_*. These views are among the most reliable tools for understanding how the system behaves internally.
+The first step is identifying queries that consistently run for long periods, usually triggered by real application users. This requires analysing database query logs and making use of Dynamic Management Views, particularly those starting with `sys.dm_exec_*`. These views are among the most reliable tools for understanding how the system behaves internally.
 
 ### 2. Structural Analysis of Queries
 
-Each identified query should be examined in detail. Unnecessary use of UNION, scalar functions inside SELECT statements, deep nested subqueries, and poorly designed filters often lead to significant performance degradation. Understanding the true intent of each query is crucial.
+Each identified query should be examined in detail. Unnecessary use of `UNION`, scalar functions inside `SELECT` statements, deep nested subqueries, and poorly designed filters often lead to significant performance degradation. Understanding the true intent of each query is crucial.
 
 ### 3. Query Optimisation and Execution Plan Review
 
@@ -29,7 +29,7 @@ Once the problematic queries are identified, the optimisation phase begins. This
 
 ### 4. Hidden Problems with Data Type Mismatches
 
-One of the most frequently overlooked issues in real projects is data type mismatch. A column that appears to contain numeric data might actually be defined as VARCHAR, or a date value might be stored as text. These decisions introduce implicit conversions, excessive CPU usage, and hard-to-trace errors. Automatic conversions performed by the database are not always a benefit and often hide the root cause of performance issues.
+One of the most frequently overlooked issues in real projects is a data type mismatch. A column that appears to contain numeric data might actually be defined as `VARCHAR`, or `DATETIME` value might be stored as text. These decisions introduce implicit conversions, excessive CPU usage, and hard-to-trace errors. Automatic conversions performed by the database are not always a benefit and often hide the root cause of performance issues.
 
 ### 5. Considering Materialised Views
 
