@@ -15,6 +15,6 @@ title: Contact
   <p>
     I am based in Istanbul, Turkey, and I usually respond within a few business days.
     If you prefer, you can also connect with me on
-    <a href="https://www.linkedin.com/in/ibrahimatay">LinkedIn</a>.
+    <a href="https://www.linkedin.com/in/ibrahimatay" target="_blank">LinkedIn</a>.
   </p>
 </div>
