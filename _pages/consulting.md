@@ -5,11 +5,12 @@ title: Consulting
 ---
 ## Application Modernization
 
-Enterprise systems become increasingly complex, making it difficult to respond to evolving business needs. At this point, modernization becomes essential to ensure the sustainability of critical business applications—whether it involves decomposing a monolithic architecture into microservices, modularizing existing systems, or re-platforming for cloud infrastructure.
+As your systems grow, they become more complex. It becomes increasingly difficult to respond to business needs promptly. That's where modernization comes in. Sometimes you need to break down monoliths into microservices, refactor existing systems, or move to the cloud. Regardless of the path, your critical applications must remain healthy for the long term.
 
-With years of hands-on experience in finance, insurance, and high-throughput systems, we help organizations modernize their application landscape using industry-proven techniques such as domain-driven design, event-driven architecture, and scalable software architecture patterns. We work closely with your teams to manage the entire modernization journey—from analysis and planning to execution—delivering robust, high-quality, and maintainable systems.
+I've spent years working with finance, insurance, and high-throughput systems. That hands-on experience helps me guide organizations through modernization. I rely on proven approaches like domain-driven design and event-driven architecture. We work together from planning through execution, step by step. The result is robust, well-built systems that are actually maintainable.
 
 ## Architectural Assessments
-A slowdown in a software team's velocity is often not just a result of technical debt, but also deeply rooted in team structure, process design, and technology choices. Our architectural assessments go beyond the code to take a holistic view of your ecosystem.
 
-We identify bottlenecks such as complex integrations, tight coupling, and inefficient workflows, and collaborate with your teams to clarify the target architecture. Together, we develop a milestone-driven transformation roadmap designed to support long-term agility, maintainability, and performance. We aim to enable your teams to deliver value at speed through a resilient and future-proof software architecture.
+When a team's productivity slows down, it's rarely just about technical debt. Often it's deeper: team structure, how you organize work, the tech choices you've made. I don't just look at the code. I look at your whole system.
+
+I identify the real bottlenecks: complex integrations, tight coupling, workflows that don't flow. Then we work together to define what the target architecture should look like. From there, we build a practical roadmap you can follow step by step. The goal is simple: help your teams move fast, keep systems sustainable, and stay flexible as things change.
