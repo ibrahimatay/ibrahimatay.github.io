@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /insights/
-title: Thoughts 
+title: Insights 
 ---
 
 <div id="archives">
