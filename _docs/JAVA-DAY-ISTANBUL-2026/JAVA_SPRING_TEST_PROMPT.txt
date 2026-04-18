@@ -1,0 +1,231 @@
+JAVA_SPRING_TEST_FILE_PROMPT_TEMPLATE = """
+    You are an expert in writing unit tests for Java/Spring Boot applications using JUnit 5 (Jupiter) and Mockito. Your task is to generate comprehensive unit tests for all methods in the target Service/Component class. Follow these guidelines:
+
+    #Inputs:
+    "base_test_class_content":
+        This is the base test class that provides common setup, shared mocks, and utility methods.
+
+    "file_content":
+        This is the source file for which you must generate a test class, using the base class as reference.
+
+    Your work:
+    - If file_content contains any usage of `@Query(nativeQuery = true)`, `EntityManager.createNativeQuery`, `JdbcTemplate`, or `NamedParameterJdbcTemplate`, skip the test generation entirely. Create the output file and put only a single comment line: `// Skipped: Native SQL query detected`.
+
+    - If the file does NOT contain any of the above native SQL patterns, proceed with test generation following the rules below.
+
+    ---
+
+    ## Base Class Rules
+
+    - Annotate all test classes with `@ExtendWith(MockitoExtension.class)`.
+    - Derive all test classes from `BaseTest` to ensure consistent setup and teardown.
+    - If a mock, fixture object, or utility is already initialized in `BaseTest`, do NOT re-declare or re-initialize it in the generated test class.
+      For example, if `objectMapper` or `modelMapper` is already defined in `BaseTest`, do not create a new instance in the derived class.
+    - All shared `@Mock` objects defined in `BaseTest` must be reused — never shadowed with local declarations.
+
+    ---
+
+    ## Class Under Test (SUT) Rules
+
+    - The class under test must be declared as a `private` field named `sut`.
+    - Annotate the `sut` field with `@InjectMocks`.
+    - Do NOT manually instantiate the `sut` — let Mockito inject the mocks automatically via `@InjectMocks`.
+    - The `sut` object does NOT expose `.request`, `.entity`, or `.response` fields. Do not reference or generate these in the tests.
+
+    ---
+
+    ## Constructor / Setup
+
+    - If additional setup beyond `@InjectMocks` is required, use a `@BeforeEach` annotated method.
+    - In the `@BeforeEach` method, configure any Mockito stubs that are common across multiple tests.
+    - Do NOT use constructors for test class initialization — prefer `@BeforeEach`.
+
+    ---
+
+    ## Dependency Injection & Mocking
+
+    - Use `@Mock` annotation for all dependencies of the class under test.
+    - Use `@InjectMocks` for the SUT (system under test).
+    - Use `Mockito.when(...).thenReturn(...)` for stubbing method calls.
+    - Use `Mockito.doNothing().when(...)` for void methods.
+    - Use `Mockito.doThrow(...).when(...)` for exception scenarios on void methods.
+    - For Spring `ApplicationContext`, `Environment`, or `MessageSource` dependencies, mock them as standard dependencies.
+    - If `BIKServiceHelper` or similar helper classes are required, always mock the interface (e.g., `IBIKServiceHelper`), never the concrete implementation.
+
+    ---
+
+    ## Test Data Generation
+
+    - Use builder pattern or manual object construction for test data.
+    - Create a private helper method in the test class for building complex test objects:
+      ```java
+      private SomeRequest createValidRequest() {
+          return SomeRequest.builder()
+              .field1("value1")
+              .field2(123L)
+              .build();
+      }
+      ```
+    - For entity objects with JPA relationships, ensure all required associations are properly set.
+    - If the project uses Lombok `@Builder`, leverage it. Otherwise, use setter-based construction.
+    - For collections, use `List.of(...)`, `Set.of(...)`, or `Map.of(...)` for immutable test data.
+    - Avoid using random data generation — test data should be deterministic and meaningful.
+
+    ---
+
+    ## Repository / JPA Layer Mocking
+
+    - Mock all `Repository` interfaces (extending `JpaRepository`, `CrudRepository`, etc.) using `@Mock`.
+    - Stub repository method calls with appropriate return values:
+      ```java
+      when(someRepository.findById(anyLong())).thenReturn(Optional.of(entity));
+      when(someRepository.findAll()).thenReturn(List.of(entity1, entity2));
+      when(someRepository.save(any(SomeEntity.class))).thenReturn(savedEntity);
+      ```
+    - For `Optional`-returning methods, test both `Optional.of(...)` (found) and `Optional.empty()` (not found) scenarios.
+    - For custom query methods, mock them the same way as standard repository methods.
+
+    ---
+
+    ## Assertions
+
+    - Use ONLY JUnit 5 `Assertions` methods:
+      - `assertEquals(expected, actual)` — for equality checks (preferred for numeric validations).
+      - `assertNotNull(object)` — for null checks.
+      - `assertNull(object)` — for explicit null validation.
+      - `assertTrue(condition)` / `assertFalse(condition)` — for boolean conditions.
+      - `assertThrows(ExceptionType.class, () -> { ... })` — for exception testing.
+    - Do NOT use:
+      - `AssertJ` (`assertThat(...)`) — not permitted.
+      - `Hamcrest` matchers — not permitted.
+      - `assertContains`, `assertSingle`, or similar non-standard assertions.
+    - For numerical validations, always prefer `assertEquals` for clarity and accuracy.
+    - Each non-void returning method invocation must be assigned to a variable and verified with assertions.
+
+    ---
+
+    ## Mock Verification
+
+    - Verify that mocked dependencies are called with correct parameters using:
+      ```java
+      verify(someRepository, times(1)).save(any(SomeEntity.class));
+      verify(someService).process(eq(expectedParam));
+      verify(someRepository, never()).delete(any());
+      ```
+    - Use `ArgumentCaptor` when you need to inspect the exact argument passed to a mock:
+      ```java
+      ArgumentCaptor<SomeEntity> captor = ArgumentCaptor.forClass(SomeEntity.class);
+      verify(someRepository).save(captor.capture());
+      assertEquals("expectedValue", captor.getValue().getField());
+      ```
+
+    ---
+
+    ## State & Entity Initialization
+
+    - For tests involving state transitions, ensure the initial state is correctly set (e.g., `States.EDIT.getId()`).
+    - For verification-related tests, set the initial `stateId` of the entity to `States.EDIT.getId()`.
+    - When testing JPA entities, ensure `@Version` fields and audit fields (`createdDate`, `lastModifiedDate`) are properly handled.
+
+    ---
+
+    ## Exception & Edge Case Handling
+
+    - Use `assertThrows` for expected exceptions:
+      ```java
+      @Test
+      void shouldThrowExceptionWhenEntityNotFound() {
+          when(someRepository.findById(anyLong())).thenReturn(Optional.empty());
+
+          assertThrows(EntityNotFoundException.class, () -> {
+              sut.findById(999L);
+          });
+      }
+      ```
+    - Test `null` input handling where applicable.
+    - Test empty collection inputs.
+    - Test boundary values for numeric inputs.
+
+    ---
+
+    ## Test Coverage Requirements
+
+    - Write unit tests for ALL public methods, including:
+      - Happy path scenarios (valid input, expected output).
+      - Edge cases (null inputs, empty collections, boundary values).
+      - Exception handling (expected exceptions, error conditions).
+      - State transitions (before/after entity state changes).
+    - Each test method must follow the naming convention: `shouldDoSomething_WhenCondition`
+      ```java
+      @Test
+      void shouldReturnEntity_WhenValidIdProvided() { ... }
+
+      @Test
+      void shouldThrowException_WhenEntityNotFound() { ... }
+      ```
+
+    ---
+
+    ## Test Method Structure
+
+    - Follow the Arrange-Act-Assert (AAA) pattern:
+      ```java
+      @Test
+      void shouldCalculateTotal_WhenValidItemsProvided() {
+          // Arrange
+          var request = createValidRequest();
+          when(repository.findById(1L)).thenReturn(Optional.of(entity));
+
+          // Act
+          var result = sut.calculate(request);
+
+          // Assert
+          assertNotNull(result);
+          assertEquals(expectedTotal, result.getTotal());
+          verify(repository, times(1)).findById(1L);
+      }
+      ```
+    - Keep `// Arrange`, `// Act`, `// Assert` comments in every test for readability.
+
+    ---
+
+    ## Restrictions
+
+    - Do NOT use `AssertJ`, `Hamcrest`, or any assertion library outside of JUnit 5 `Assertions`.
+    - Do NOT write tests that depend on `DataTable`, `ResultSet`, or raw JDBC constructs.
+    - Do NOT create new instances of shared infrastructure objects: `ObjectMapper`, `ModelMapper`, `Logger`, `MessageSource` — use the existing instances from `BaseTest`.
+    - Do NOT directly access internal fields of the `sut` via reflection in tests. Test through the public API only.
+    - Do NOT include narrative sections such as "Explanation of Changes", "Please note", or "Summary of tests" — output must be test code only.
+    - Remove any occurrences of "```java", "```", or markdown formatting from the output — they cause compilation errors.
+    - Avoid purely data-driven tests — assertions must validate business logic or behavior, not just data existence.
+    - Do NOT use `@SpringBootTest`, `@DataJpaTest`, or any Spring context-loading annotations — tests must be pure unit tests with Mockito.
+
+    ---
+
+    ## Logging in Tests
+
+    - Do NOT mock `Logger` or `LoggerFactory`. Logging is a side effect and should not be verified in unit tests unless it is part of the business requirement.
+    - If `BaseTest` already provides a logger instance, reuse it.
+
+    ---
+
+    ## Output Format
+
+    - Provide the COMPLETE test class including:
+      - All necessary `import` statements.
+      - Class-level annotations (`@ExtendWith(MockitoExtension.class)`).
+      - All `@Mock` and `@InjectMocks` field declarations.
+      - `@BeforeEach` setup method (if needed).
+      - All `@Test` methods.
+    - The output must be COMPILABLE Java code — no markdown, no placeholders, no narrative text.
+    - Do NOT include package declaration — it will be added automatically.
+
+    ---
+
+    ## Inputs:
+    base_test_class_content: {base_test_class_content}
+    file_content: {file_content}
+
+    ## Output:
+    Complete JUnit 5 test class for the file_content, using base_test_class_content as reference, following all rules above.
+"""
